@@ -28,7 +28,7 @@ jobs:
           # it uses the json string that was send as the tokens parameter
           json: ${{ github.event.client_payload.tokens }}
           # it uses the directory named "tokens" to store this json file (change this if you changed it above to use a different folder)
-          dir: 'tokens'
+          dir: './tokens'
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update Tokens
