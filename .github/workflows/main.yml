@@ -32,6 +32,8 @@ jobs:
       - name: Commit
         run: |
           # Stage the file, commit and push
+          git config user.name "Aishwaryalaxmi"
+          git config user.email "aishurao199@gmail.com"
           git add .
           git commit -m "Added framework"
           git push
